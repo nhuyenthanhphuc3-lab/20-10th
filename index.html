@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chúc mừng 20/10 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Cozy romantic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <h1 class="headline">💖 Chúc mừng ngày 20/10 💖</h1>
+      <p class="subtitle">Mong em luôn tươi như hoa, sáng như ngọc</p>
+    </header>
+
+    <section class="stage">
+      <!-- left and right small portrait -->
+      <img class="side-portrait left" alt="ảnh bên trái" data-src="https://files.catbox.moe/06xpub.png">
+      <img class="side-portrait right" alt="ảnh bên phải" data-src="https://files.catbox.moe/06xpub.png">
+
+      <!-- envelope / letter -->
+      <div class="envelope" id="envelope">
+        <div class="envelope-top"></div>
+        <div class="envelope-body">
+          <div class="heart-btn" id="openHeart" aria-label="Mở thư">❤️</div>
+          <!-- scrollable letter content -->
+          <div class="letter" id="letter" tabindex="0" role="article" aria-label="Lời chúc">
+            <!-- typed-in lines will be animated -->
+            <div class="letter-inner" id="letterInner">
+              <p>Gửi em yêu của anh,</p>
+              <p>Ngày 20/10 lại đến — anh muốn gửi em ngàn lời chúc tốt đẹp nhất. Cảm ơn em đã luôn bên anh, dịu dàng, kiên nhẫn và đầy yêu thương. Em chính là món quà tuyệt vời nhất mà cuộc đời đã tặng anh.</p>
+              <p>Chúc em mãi xinh đẹp, vui vẻ, thành công và an yên — không chỉ hôm nay mà mỗi ngày về sau. Anh luôn trân trọng và giữ lấy từng khoảnh khắc bên em.</p>
+              <p>Yêu em rất nhiều. 💗</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fan gallery -->
+      <div class="fan" id="fan">
+        <img class="fan-img" data-src="https://files.catbox.moe/netfsr.jpeg" alt="">
+        <img class="fan-img" data-src="https://files.catbox.moe/netfsr.jpeg" alt="">
+        <img class="fan-img" data-src="https://files.catbox.moe/netfsr.jpeg" alt="">
+        <img class="fan-img" data-src="https://files.catbox.moe/netfsr.jpeg" alt="">
+      </div>
+    </section>
+
+    <!-- overlay modal for zoomed photo -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <button class="modal-close" id="modalClose" aria-label="Đóng">&times;</button>
+      <img id="modalImg" alt="Ảnh phóng to">
+    </div>
+
+    <!-- floating layer (hearts + text) -->
+    <div id="floatingLayer" class="floating-layer" aria-hidden="true"></div>
+
+    <footer class="footer-note">
+      <small>Tap trái tim trên phong thư để mở — chạm ảnh để phóng to</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
